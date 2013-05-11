@@ -5,8 +5,10 @@ A sample of RubyMotion Command-Line Plugin
 gem インストール後にコマンドを RubyGems を通じて実行することができません。
 RubyMotion のプラグインは ~/Library/RubyMotion/command に配置する必要があるため、gem をインストールした後に手作業で所定の場所へコピーするか、gem 付属のインストーラを実行する必要があります。
 
-  $ gem install my-command-line-plugin
-  $ my-command-line-plugin install
+```
+$ gem install my-command-line-plugin
+$ my-command-line-plugin install
+```
 
 そこで、extconf.rb を使用して手間を省きました。
 通常 extconf.rb は C 拡張ライブラリをビルドするための Makefile を作成するために用いられます。
